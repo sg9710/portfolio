@@ -1,0 +1,411 @@
+@charset "utf-8";
+
+/* 해피니스산스 폰트 */
+@font-face {
+    font-family: 'Happiness-Sans-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+/* 해피니스산스 타이틀폰트 */
+@font-face {
+    font-family: 'Happiness-Sans-Title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Title.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 나눔바른고딕 폰트 */
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+   }
+   
+   @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+   }
+   
+   @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+   }
+   
+   .nanumbarungothic * {
+    font-family: 'NanumBarunGothic', sans-serif;
+   }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    line-height: 1;
+    color: #373535;
+}
+
+/***** header *****/
+
+header {
+    height: 120px;
+    border-bottom: 2px solid #002f6c;
+    margin-bottom: 40px;
+}
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 180px);
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+}
+header .inner h1 a img {
+    width: 208px;
+    height: 42px;
+}
+header .inner ul {
+    display: flex;
+    align-items: center;
+}
+header .inner nav ul {
+    margin-left: 320px;
+    font-family: 'Happiness-Sans-Bold';
+    font-size: 20px;
+}
+header .inner nav ul li {
+    margin-right: 40px;
+}
+header .inner .mid_menu {
+    margin-left: 100px;
+    font-family: 'Happiness-Sans-Bold';
+    font-size: 16px;
+    font-weight: lighter;
+}
+header .inner .mid_menu li {
+    margin-right: 50px;
+}
+header .inner .right_menu li {
+    margin-right: 30px;
+    font-size: 25px;
+}
+
+/***** main_visual *****/
+
+.main_visual {
+    width: calc(100% - 180px);
+    margin: 0 auto;
+}
+.main_visual img {
+    width: 100%;
+}
+
+/***** cont01 *****/
+
+.cont01 {
+    margin: 105px 0 140px;
+    padding: 0 240px;
+}
+.cont01 .inner {
+    width: 1440px;
+}
+
+.cont01 .inner h2 {
+    font-size: 40px;
+    font-family: 'Happiness-Sans-Title';
+    margin-bottom: 40px;
+    
+}
+.cont01 .inner > p {
+    font-family: 'NanumBarunGothic';
+    font-size: 20px;
+    color: #282727;
+    margin-bottom: 50px;
+    position: relative;
+    padding-left: 120px;
+}
+.cont01 .inner > p::before {
+    content: '';
+    height: 4px;
+    width: 100px;
+    background-color: #002f6c;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.cont01 .inner .list {
+    display: flex;
+    justify-content: space-between;
+}
+.cont01 .inner .list .item {
+    width: 342px;
+    height: 525px;
+    border: 1px solid #3e3e3e;
+    border-radius: 20px;
+}
+.cont01 .inner .list .item figure {
+    overflow: hidden;
+    width: 342px;
+    height: 342px;
+    border-radius: 20px;
+    border: 1px solid #3e3e3e;
+}
+.cont01 .inner .list .item:hover figure img {
+    transform: scale(1.15);
+}
+.cont01 .inner .list .item figure img {
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.7s;
+}
+.cont01 .inner .list .item div {
+    padding: 20px;
+}
+.cont01 .inner .list .item div h3 {
+    margin-bottom: 30px;
+    font-family: 'Happiness-Sans-Bold';
+    font-size: 16px;
+    color: #282727;
+}
+.cont01 .inner .list .item div p {
+    font-family: 'NanumBarunGothic';
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 36px;
+    line-height: 20px;
+}
+.cont01 .inner .list .item div h4 {
+    font-family: 'Happiness-Sans-Bold';
+    font-size: 20px;
+}
+.cont01 .inner .list .item:nth-child(2) div p {
+    margin-top: 45px;
+}
+
+/***** cont02 *****/
+
+.cont02 {
+    background-color: #efefef;
+    width: 100%;
+    padding: 100px 240px 325px;
+    position: relative;
+}
+.cont02 .inner {
+    width: 1440px;
+}
+.cont02 .inner h2 {
+    font-size: 40px;
+    font-family: 'Happiness-Sans-Title';
+    margin-bottom: 40px;
+}
+.cont02 .inner > p {
+    font-family: 'NanumBarunGothic';
+    font-size: 20px;
+    color: #282727;
+    margin-bottom: 50px;
+    position: relative;
+    padding-left: 120px;
+}
+.cont02 .inner > p::before {
+    content: '';
+    height: 4px;
+    width: 100px;
+    background-color: #002f6c;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.cont02 .inner .list .item h3 {
+    font-size: 24px;
+    font-family: 'Happiness-Sans-Bold';
+    margin-bottom: 40px;
+}
+.cont02 .inner .list {
+    display: flex;
+    justify-content: space-between;
+}
+.cont02 .inner .list .item figure img {
+    background-color: #efefef;
+    box-shadow: 3px 3px 15px #000000;
+    border-radius: 20px;
+}
+.cont02 .inner .list .item div dl dt {
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+.cont02 .inner .list .item_left .item figure img {
+    margin-bottom: 20px;
+}
+.cont02 .inner .list .item_left .item div {
+    font-size: 18px;
+    font-family: 'NanumBarunGothic';
+    color: #282727;
+}
+.cont02 .inner .list .item_left .item:nth-child(1) div dl dd {
+    width: 375px;
+    height: 30px;
+    background-color: #bebebe;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 90px;
+    position: relative;
+}
+.cont02 .inner .list .item_left .item:nth-child(1) div dl dd::before {
+    content: '';
+    height: 2px;
+    width: 586px;
+    background-color: #bebebe;
+    display: block;
+    position: absolute;
+    top: 120px;
+}
+.cont02 .inner .list .item_left .item:nth-child(2) div dl dd {
+    width: 255px;
+    height: 30px;
+    background-color: #bebebe;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+}
+.cont02 .inner .list .item_left .item:nth-child(2) h3 {
+    padding-top: 85px;
+}
+
+/*** .item_right ***/
+
+.cont02 .inner .list .item_right {
+    /* padding-top: 325px; */
+    background-image: url('/img/cont2_bg.png');
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    padding: 0 100px;
+    padding-top: 425px;
+    padding-bottom: 150px;
+}
+.cont02 .inner .list .item_right .item figure img {
+    margin-bottom: 20px;
+}
+.cont02 .inner .list .item_right .item div {
+    font-size: 18px;
+    font-family: 'NanumBarunGothic';
+    color: #282727;
+}
+.cont02 .inner .list .item_right .item:nth-child(1) div dl dd {
+    width: 410px;
+    height: 30px;
+    background-color: #bebebe;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 90px;
+    position: relative;
+}
+.cont02 .inner .list .item_right .item:nth-child(1) div dl dd::before {
+    content: '';
+    height: 2px;
+    width: 586px;
+    background-color: #bebebe;
+    display: block;
+    position: absolute;
+    top: 120px;
+}
+.cont02 .inner .list .item_right .item:nth-child(2) h3 {
+    padding-top: 85px;
+}
+.cont02 .inner .list .item_right .item:nth-child(2) div dl dd {
+    width: 280px;
+    height: 30px;
+    background-color: #bebebe;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+}
+
+/***** footer *****/
+
+footer {
+    background-color: #222222;
+    color: rgb(228, 227, 227);
+    height: 315px;
+    font-family: 'Happiness-Sans-Bold';
+    /* margin-top: 65px; */
+}
+footer .inner {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+}
+footer .inner .logo img {
+    width: 75px;
+    height: 40px;
+    margin-top: 50px;
+}
+footer .inner .list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+footer .inner .list .text1 {
+    margin-left: 200px;
+    font-size: 16px;
+}
+footer .inner .list .text1 ul li {
+    display: inline-block;
+    margin-right: 40px;
+}
+footer .inner .list .text2 {
+    margin: 0 50px;
+}
+footer .inner .list .text2 h2 {
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+footer .inner .list .text2 ul li {
+    font-size: 14px;
+    color: #979797;
+    line-height: 22px;
+}
+footer .inner .list .text3 {
+    margin-left: 200px;
+}
+footer .inner .list .text3 h3 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+footer .inner .list .text3 ul li {
+    font-size: 14px;
+    color: #979797;
+    display: inline-block;
+    line-height: 30px;
+}
+footer .inner .list .text3 p {
+    font-size: 14px;
+    color: #979797;
+}
+
+
+
