@@ -10,6 +10,9 @@
 /* 나눔스퀘어 */
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 
+/* 영어폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 /* 초기값, 공통요소(제목, 버튼, 폰트스타일), 웹폰트 */
 * {
     margin: 0;
@@ -26,21 +29,22 @@ a {
 body {
     line-height: 1;
     color: #333;
-    background-color: #F2E2CE;
+    background-color: #f7f7f7;
     font-family: 'NanumSquareNeo-Variable';
+    overflow-x: hidden;
 }
 
 /* 공통 스타일 */
 
 .inner {
-    width: 1440px;
+    width: 1280px;
     margin: 0 auto;
 }
 .title {
     margin-bottom: 40px;
 }
 .title h3 {
-    font-size: 50px;
+    font-size: 65px;
     margin-bottom: 16px;
 }
 .title p {
@@ -48,23 +52,28 @@ body {
 }
 
 .btn li:nth-child(1) {
+    width: 350px;
     height: 40px;
     line-height: 40px;
-    background-color: #260101;
-    color: #fff;
+    background-image: linear-gradient(90deg, #71a7b7,#cedbe4);
+    color: #333;
     padding: 0 18px;
-    border-radius: 40px;
-    display: inline-block;
-}
+    border-radius: 10px;
+    text-align: center;
+    /* display: inline-block; */
+} 
 .btn li:nth-child(2) {
+    width: 350px;
     height: 40px;
     line-height: 40px;
-    background-color: #A67968;
-    color: #fff;
+    border: 1px solid #479ec4;
+    color: #333;
     padding: 0 18px;
-    border-radius: 40px;
-    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+    /* display: inline-block; */
 }
+
 .swiper {
     width: 100%;
     height: 100%;
