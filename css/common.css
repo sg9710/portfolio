@@ -7,11 +7,12 @@
     font-weight: normal;
     font-style: normal;
 }
-/* 나눔스퀘어 */
-@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 
 /* 영어폰트 */
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/* footer 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 /* 초기값, 공통요소(제목, 버튼, 폰트스타일), 웹폰트 */
 * {

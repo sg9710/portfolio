@@ -22,6 +22,11 @@
     <link href="css/common.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
 
+    <!-- footer 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -38,11 +43,6 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <!-- <ul class="right_menu">
-                <li><a href="#"><i class="xi-youtube-play"></i></a></li>
-                <li><a href="#"><i class="xi-kakaotalk"></i></a></li>
-            </ul> -->
-
         </div><!-- .inner end -->
     </header>
 
@@ -55,6 +55,8 @@
         <div class="ball"></div>
         <div class="ball2"></div>
         <div class="ball3"></div>
+        <div class="ball4"></div>
+        <div class="ball5"></div>
         <ul>
             <li><a href="#"><i class="xi-mouse"></a></i></li>
             <li><a href="#"><i class="xi-long-arrow-down"></a></i></li>
@@ -63,14 +65,21 @@
 
     <div class="fixmenu">
         <ul>
-            <li data-text="HOME"><a href="#">HOME</a></li>
-            <li data-text="ABOUT"><a href="#">ABOUT</a></li>
-            <li data-text="PORTFOLIO"><a href="#">PORTFOLIO</a></li>
-            <li data-text="CONTACT"><a href="#">CONTACT</a></li>
+            <li><a href="#" data-text="HOME">HOME</a></li>
+            <li><a href="#" data-text="ABOUT">ABOUT</a></li>
+            <li class="firstmenu">
+                <a href="#" data-text="PORTFOLIO">PORTFOLIO</a>
+                <ul class="submenu">
+                    <li data-text="Video/Motion Graphic"><a href="#a">Video/Motion Graphic</a></li>
+                    <li data-text="Web Design"><a href="#b">Web Design</a></li>
+                    <li data-text="Graphic"><a href="#c">Graphic</a></li>
+                </ul>
+            </li>
+            <li><a href="#" data-text="CONTACT">CONTACT</a></li>
         </ul>
-    </div><!-- .fixmenu end --> 
-    
-    
+    </div><!-- .fixmenu end -->
+
+
     <section class="profile">
         <div class="inner">
             <div class="title">
@@ -122,16 +131,16 @@
 
     <section class="portfolio1">
 
-        <section class="portfolio">
+        <div class="portfolio">
             <div class="inner">
                 <div class="text" data-aos="fade-up">
                     <h2>PORTFOLIO</h2>
                 </div><!-- .text end -->
                 <div class="ballc2"></div>
             </div><!-- .inner end -->
-        </section>
+        </div>
 
-        <section class="video">
+        <div class="video scroll" id="a">
             <div class=inner data-aos="zoom-in">
                 <div class="title">
                     <h3>영상편집/모션그래픽</h3>
@@ -149,13 +158,14 @@
                 <div class="list">
                     <div class="list_in on"><!-- 게임 -->
                         <!-- Swiper -->
-                        <div class="swiper mySwiper">
+                        <div class="swiper video_slide">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
 
                                     <div class="youtube_wrap">
                                         <div class="youtube">
-                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/VbpxWcumLl0"
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/VbpxWcumLl0"
                                                 title="YouTube video player" frameborder="0"
                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                 allowfullscreen></iframe>
@@ -182,17 +192,19 @@
 
                                 </div><!-- .swiper-slide end / 1 -->
                                 <div class="swiper-slide">
-                                   
+
                                     <div class="youtube_wrap">
                                         <div class="youtube">
-                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/8vC1i9NgOoo"
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/8vC1i9NgOoo"
                                                 title="YouTube video player" frameborder="0"
                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                 allowfullscreen></iframe>
                                         </div><!-- .youtube end -->
                                     </div><!-- .youtube_wrap end -->
                                     <div class="info">
-                                        <h4>𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭 지친 마음을 달래줄 따뜻한 지브리 OST 모음 | 오케스트라 버전 | 가사 없는 음악 | Studio Ghibli
+                                        <h4>𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭 지친 마음을 달래줄 따뜻한 지브리 OST 모음 | 오케스트라 버전 | 가사 없는 음악 | Studio
+                                            Ghibli
                                             OST</h4>
                                         <p>디자인, 연출, 기획, 촬영, 특수효과</p>
                                         <dl>
@@ -224,13 +236,14 @@
 
                     <div class="list_in"><!-- 홍보영상 -->
                         <!-- Swiper -->
-                        <div class="swiper mySwiper">
+                        <div class="swiper video_slide">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
 
                                     <div class="youtube_wrap">
                                         <div class="youtube">
-                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/_ZAgIHmHLdc"
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/_ZAgIHmHLdc"
                                                 title="YouTube video player" frameborder="0"
                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                 allowfullscreen></iframe>
@@ -256,11 +269,13 @@
                                     </div><!-- .info end -->
 
                                 </div><!-- .swiper-slide end / 1 -->
+
                                 <div class="swiper-slide">
 
                                     <div class="youtube_wrap">
                                         <div class="youtube">
-                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/MJG9RPVQizs"
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/MJG9RPVQizs"
                                                 title="YouTube video player" frameborder="0"
                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                 allowfullscreen></iframe>
@@ -298,9 +313,9 @@
                 </div><!-- .list end -->
 
             </div><!-- .inner end -->
-        </section><!-- .video end -->
+        </div><!-- .video end -->
 
-        <section class="web">
+        <div class="web scroll" id="b">
             <div class="inner">
                 <div class="title">
                     <h3 data-aos="fade-up">웹디자인/웹퍼블리싱</h3>
@@ -308,18 +323,16 @@
                 </div><!-- .title end -->
                 <div class="list">
                     <div class="item">
-                        <div class="info">
-                            <div class="box">
-                                <h4>엔제리너스 리디자인</h4>
-                                <dl>
-                                    <dt>프로그램</dt>
-                                    <dd>포토샵, 비주얼스튜디오코드</dd>
-                                </dl>
-                                <dl>
-                                    <dt>사용언어</dt>
-                                    <dd>html, css</dd>
-                                </dl>
-                            </div><!-- .box end -->
+                        <div class="info" data-aos="fade-up">
+                            <h4><b>엔제리너스</b> 리디자인</h4>
+                            <dl>
+                                <dt>프로그램</dt>
+                                <dd>포토샵, 비주얼스튜디오코드</dd>
+                            </dl>
+                            <dl>
+                                <dt>사용언어</dt>
+                                <dd>html, css</dd>
+                            </dl>
                             <ul class="btn">
                                 <li><a href="sub/in/index.html" target="_blank">제작사이트보기</a></li>
                                 <li><a href="sub/in/process.html" target="_blank">기획서보기</a></li>
@@ -328,21 +341,19 @@
                     </div><!-- .item end / 1 -->
 
                     <div class="item">
-                        <div class="info">
-                            <div class="box">
-                                <h4>현대샵 리뉴얼</h4>
-                                <dl>
-                                    <dt>프로그램</dt>
-                                    <dd>포토샵, 비주얼스튜디오코드</dd>
-                                </dl>
-                                <dl>
-                                    <dt>사용언어</dt>
-                                    <dd>html, css</dd>
-                                </dl>
-                            </div><!-- .box end -->
+                        <div class="info" data-aos="fade-up">
+                            <h4><b>현대샵</b> 리뉴얼</h4>
+                            <dl>
+                                <dt>프로그램</dt>
+                                <dd>포토샵, 비주얼스튜디오코드</dd>
+                            </dl>
+                            <dl>
+                                <dt>사용언어</dt>
+                                <dd>html, css</dd>
+                            </dl>
                             <ul class="btn">
                                 <li><a href="sub/in2/index.html" target="_blank">제작사이트보기</a></li>
-                                <li><a href="sub/in2/process.html">기획서보기</a></li>
+                                <li><a href="sub/in2/process.html" target="_blank">기획서보기</a></li>
                             </ul><!-- .btn end -->
                         </div><!-- .info end -->
                     </div><!-- .item end / 2 -->
@@ -353,114 +364,109 @@
                     <div class="right_img">
                         <figure class="img1"></figure><!-- .img1 end -->
                         <figure class="img2"></figure><!-- .img2 end -->
-                    </div><!-- .right_img end -->  
-                    
+                    </div><!-- .right_img end -->
+
                 </div><!-- .list end -->
 
             </div><!-- .inner end -->
-        </section><!-- .web end -->
+        </div><!-- .web end -->
 
-        <section class="graphic">
+        <div class="graphic scroll" id="c">
             <div class="inner">
                 <div class="title">
-                    <h3>그래픽디자인</h3>
-                    <p>2D, 3D그래픽을 포토샵, 일러스트레이터를
+                    <h3 data-aos="fade-up">그래픽디자인</h3>
+                    <p data-aos="fade-up">2D, 3D그래픽을 포토샵, 일러스트레이터를
                         이용하여 디자인을 제작하였습니다.
                     </p>
                 </div><!-- .title end -->
 
                 <div class="list">
-                    <div class="item">
-                        <a href="img/상세페이지.jpg" data-fancybox="images">
-                            <img src="img/상세페이지.jpg" />
-                            <div class="info">
-                                <h4>리세디아 세럼 페이지 디자인</h4>
-                                <p>포토샵</p>
-                            </div><!-- .info end -->
-                        </a>
-                    </div><!-- .item end / 1 -->
+                    <div class="swiper graphic_slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="img/상세페이지.jpg" data-fancybox="images">
+                                    <img src="img/상세페이지.jpg" />
+                                </a>
+                            </div><!-- .swiper-slide end / 1 -->
 
-                    <div class="item">
-                        <a href="img/이케아이벤트.jpg" data-fancybox="images">
-                            <img src="img/이케아이벤트.jpg" />
-                            <div class="info">
-                                <h4>이케아 의자 이벤트 디자인</h4>
-                                <p>포토샵</p>
-                            </div><!-- .info end -->
-                        </a>
-                    </div><!-- .item end / 2-->
+                            <div class="swiper-slide">
+                                <a href="img/이케아이벤트.jpg" data-fancybox="images">
+                                    <img src="img/이케아이벤트.jpg" />
+                                </a>
+                            </div><!-- .swiper-slide end / 2 -->
 
-                    <div class="item">
-                        <a href="/img/꽃이벤트.jpg" data-fancybox="images">
-                            <img src="img/꽃이벤트.jpg" />
-                            <div class="info">
-                                <h4>베라숲 마트리카리아 효능</h4>
-                                <p>포토샵</p>
-                            </div><!-- .info end -->
-                        </a>
-                    </div><!-- .item end / 3-->
+                            <div class="swiper-slide">
+                                <a href="/img/꽃이벤트.jpg" data-fancybox="images">
+                                    <img src="img/꽃이벤트.jpg" />
+                                </a>
+                            </div><!-- .swiper-slide end / 3 -->
 
-                    <div class="item">
-                        <a href="img/banner02.png" data-fancybox="images">
-                            <img src="img/banner02.png" />
-                            <div class="info">
-                                <h4>두바이 여행상품 디자인</h4>
-                                <p>포토샵</p>
-                            </div><!-- .info end -->
-                        </a>
-                    </div><!-- .item end / 4-->
+                            <div class="swiper-slide">
+                                <a href="img/banner02.png" data-fancybox="images">
+                                    <img src="img/banner02.png" />
+                                </a>
+                            </div><!-- .swiper-slide end / 4 -->
 
-                    <div class="item">
-                        <a href="img/travel2.jpg" data-fancybox="images">
-                            <img src="img/travel2.jpg" />
-                            <div class="info">
-                                <h4>제주도 힐링코스 디자인</h4>
-                                <p>포토샵</p>
-                            </div><!-- .info end -->
-                        </a>
-                    </div><!-- .item end / 5-->
+                            <div class="swiper-slide">
+                                <a href="img/travel2.jpg" data-fancybox="images">
+                                    <img src="img/travel2.jpg" />
+                                </a>
+                            </div><!-- .swiper-slide end / 5 -->
 
-                    <div class="item">
-                        <a href="img/cake03.jpg" data-fancybox="images">
-                            <img src="img/cake03.jpg" />
-                            <div class="info">
-                                <h4>크리스마스 케이크 sns디자인</h4>
-                                <p>포토샵</p>
-                            </div><!-- .info end -->
-                        </a>
-                    </div><!-- .item end / 6-->
+                            <div class="swiper-slide">
+                                <a href="img/cake03.jpg" data-fancybox="images">
+                                    <img src="img/cake03.jpg" />
+                                </a>
+                            </div><!-- .swiper-slide end / 6 -->
 
-                    <div class="item">
-                        <a href="img/banner03.png" data-fancybox="images">
-                            <img src="img/banner03.png" />
-                            <div class="info">
-                                <h4>SNS 마케팅 디자인</h4>
-                                <p>포토샵</p>
-                            </div><!-- .info end -->
-                        </a>
-                    </div><!-- .item end / 7-->
+                            <div class="swiper-slide">
+                                <a href="img/banner03.png" data-fancybox="images">
+                                    <img src="img/banner03.png" />
+                                </a>
+                            </div><!-- .swiper-slide end / 7 -->
 
-                    <div class="item">
-                        <a href="img/토끼애니메이션15.gif" data-fancybox="images">
-                            <img src="img/토끼애니메이션15.gif" />
-                            <div class="info">
-                                <h4>토끼 모션 디자인</h4>
-                                <p>포토샵</p>
-                            </div><!-- .info end -->
-                        </a>
-                    </div><!-- .item end / 8-->
+                            <div class="swiper-slide">
+                                <a href="img/토끼애니메이션15.gif" data-fancybox="images">
+                                    <img src="img/토끼애니메이션15.gif" />
+                                </a>
+                            </div><!-- .swiper-slide end / 8 -->
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
 
                 </div><!-- .list end -->
 
             </div><!-- .inner end -->
-        </section><!-- .graphic end -->
+        </div><!-- .graphic end -->
+
     </section><!-- .portfolio1 end -->
-   
+
+    <section class="contact">
+        <h2>CONTACT</h2>
+        <div class="inner">
+            <ul>
+                <li>이메일</li>
+                <li><a href="#"><i class="xi-mail"></i></a></li>
+                <li>segun9710@naver.com</li>
+            </ul>
+            <ul>
+                <li>유튜브채널</li>
+                <li><a href="#"><i class="xi-youtube-play"></i></a></li>
+                <li>youtube</li>
+            </ul>
+            <ul>
+                <li>지원서 다운로드</li>
+                <li><a href="#" download><i class="xi-download"></i></a></li>
+                <li>Download</li>
+            </ul>
+
+        </div><!-- .inner end -->
+    </section><!-- .contact end -->
+
+
     <footer>
-        <ul>
-            <li><a href="#">유튜브채널</a></li>
-            <li><a href="#" download>지원서 다운로드</a></li>
-        </ul>
+        <h2>Lee Segun</h2>
         <p>COPYRIGHT 2023. 디자이너 이세건. ALL RIGHTS RESERVED.</p>
         <p>본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다.<br />
             사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝힙니다.</p>
@@ -490,7 +496,7 @@
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper(".video_slide", {
             pagination: {
                 el: ".swiper-pagination",
                 type: "fraction",
@@ -503,6 +509,13 @@
 
         AOS.init();
 
+        /* 메뉴 스크롤 다운 */
+
+    
+
+
+        /* 메뉴 스크롤 다운 - */
+
         // $('.btn a').click(function (e) {
         //     e.preventDefault();
         //     //a태그 링크 방지 코드
@@ -510,15 +523,31 @@
 
         //.btn ul li를 클릭했을 때
         //해당 section으로 이동
-        $('.fixmenu ul li').click(function () {
+        $('.fixmenu > ul > li > a').click(function () {
             //클릭을 했을 때 순번 index값 구하기
             //section태그의 순서 + offset().top;
-            let page = $('section').eq($(this).index()).offset().top;
+            let page = $('section').eq($(this).parent('li').index()).offset().top;
             // 포트폴리오작성시 section 대신 div로 적용
 
             //$(window).scrollTop(page);
             $('html, body').animate({
                 scrollTop: page
+            })
+
+            //버튼 스타일 변화
+            $('.fixmenu ul li').removeClass('on');
+            $(this).addClass('on');
+        }); //.btn ul li를 클릭했을 때 실행
+
+        $('.submenu li').click(function () {
+            //클릭을 했을 때 순번 index값 구하기
+            //section태그의 순서 + offset().top;
+            let page2 = $('section .scroll').eq($(this).index()).offset().top;
+            // 포트폴리오작성시 section 대신 div로 적용
+
+            //$(window).scrollTop(page);
+            $('html, body').animate({
+                scrollTop: page2
             })
 
             //버튼 스타일 변화
@@ -539,27 +568,55 @@
 
             if (scrollBar > $('.main_visual').offset().top) {
                 //cont01의 값보다 스크롤의 값이 더 클때 실행
-                $('.fixmenu ul li').removeClass('on');
-                $('.fixmenu ul li:nth-child(1)').addClass('on');
+                $('.fixmenu > ul > li').removeClass('on');
+                $('.fixmenu > ul > li:nth-child(1)').addClass('on');
             }
 
             if (scrollBar > $('.profile').offset().top) {
                 //cont01의 값보다 스크롤의 값이 더 클때 실행
-                $('.fixmenu ul li').removeClass('on');
-                $('.fixmenu ul li:nth-child(2)').addClass('on');
+                $('.fixmenu > ul > li').removeClass('on');
+                $('.fixmenu > ul > li:nth-child(2)').addClass('on');
             }
 
-            if (scrollBar > $('.video').offset().top) {
+            if (scrollBar > $('.portfolio').offset().top) {
                 //cont01의 값보다 스크롤의 값이 더 클때 실행
                 $('.fixmenu ul li').removeClass('on');
                 $('.fixmenu ul li:nth-child(3)').addClass('on');
             }
 
-            if (scrollBar > $('.web').offset().top) {
+            if (scrollBar > $('.video').offset().top) {
                 //cont01의 값보다 스크롤의 값이 더 클때 실행
                 $('.fixmenu ul li').removeClass('on');
                 $('.fixmenu ul li:nth-child(4)').addClass('on');
             }
+
+            if (scrollBar > $('.web').offset().top) {
+                //cont01의 값보다 스크롤의 값이 더 클때 실행
+                $('.fixmenu ul li').removeClass('on');
+                $('.fixmenu ul li:nth-child(5)').addClass('on');
+            }
+
+            if (scrollBar > $('.graphic').offset().top) {
+                //cont01의 값보다 스크롤의 값이 더 클때 실행
+                $('.fixmenu ul li').removeClass('on');
+                $('.fixmenu ul li:nth-child(6)').addClass('on');
+            }
+
+            if (scrollBar > $('.contact').offset().top) {
+                //cont01의 값보다 스크롤의 값이 더 클때 실행
+                $('.fixmenu ul li').removeClass('on');
+                $('.fixmenu ul li:nth-child(7)').addClass('on');
+            }
+        });
+
+        //🎃 2차메뉴 클릭 이벤트 
+        $('.fixmenu .firstmenu > a').click(function () {
+            if ($('.submenu').css('display') == 'none') {
+                $('.submenu').css('display', 'block')
+            } else (
+                $('.submenu').css('display', 'none')
+
+            )
         });
 
         //탭메뉴 클릭 이벤트
@@ -574,31 +631,22 @@
             // this .index : 클릭한 순서가 몇번째인지 찾아주는 역할 
         });
 
-        let backgroundcolor = $('.portfolio1').offset().top;
-        //offset().top : 브라우저에서 선택자의 y축 값을 알아낼 때 사용
-
-        //화면($ window)을 스크롤을 했을 때 이벤트 실행
-        $(window).scroll(function(){
-            let scrollBar = $(window).scrollTop();
-            //$(window).scrollTop() : 스크롤바의y축값
-            
-            console.log(scrollBar);
-
-            //헤더가 가지고 있는 y축값보다
-            //스크롤바가 가지고 있는 y축 값이 더 클 때
-            if(backgroundcolor < scrollBar) {
-                $('.portfolio1').addClass('on');
-                // $('.video').addClass('on');
-                // $('.web').addClass('on');
-                // $('.graphic').addClass('on');
-            } else {
-                $('.portfolio1').removeClass('on');
-                // $('.video').removeClass('on');
-                // $('.web').removeClass('on');
-                // $('.graphic').removeClass('on');
-
-            } //else : if 조건이 맞지 않을 때
-
+        var swiper = new Swiper(".graphic_slide", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
         });
 
 
